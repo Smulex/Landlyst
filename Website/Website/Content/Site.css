@@ -1,0 +1,82 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: aquamarine;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    width: 100%;
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+
+    .body-content {
+        padding: 0;
+    }
+}
+
+table.BookingForm {
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+.newUserfields {
+    display: none;
+}
+
+input[type="radio"] {
+    max-width: 20px;
+}
+
+.roomTable {
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    .roomTable td, .roomTable th {
+        border: 1px solid darkgray;
+        padding: 8px;
+    }
+
+    .roomTable tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .roomTable tr:hover {
+        background-color: #ddd;
+    }
+
+    .roomTable th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #4CAF50;
+        color: white;
+    }
+.centerImage {
+    margin: auto;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/Content/landlyst_forside.jpg);
+    height: 500px;
+    background-size: 700px;
+}
